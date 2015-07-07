@@ -17,6 +17,9 @@ namespace MeoWallet
         Wallet,
 
         [EnumMember(Value = "PAYPAL")]
-        PayPal
+        PayPal,
+        
+        [EnumMember(Value = "UNICRE")]
+        Unicre
     }
 }
