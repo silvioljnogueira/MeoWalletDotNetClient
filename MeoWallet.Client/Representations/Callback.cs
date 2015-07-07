@@ -45,5 +45,17 @@ namespace MeoWallet
 
         [JsonProperty("cc")]
         public CreditCard CreditCard { get; set; }
+        
+        // TODO undocumented
+        [JsonProperty("mb_entity")]
+        public string MBEntity { get; set; }
+
+        // TODO undocumented
+        [JsonProperty("mb_ref")]
+        public string MBRef { get; set; }
+
+        // TODO its an Enum, but the allowed values are not documented
+        [JsonProperty("user_error")]
+        public string UserError { get; set; }
     }
 }
