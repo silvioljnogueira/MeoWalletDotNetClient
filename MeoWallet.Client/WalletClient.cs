@@ -240,7 +240,7 @@ namespace MeoWallet
                     throw new MeoWalletApiException(await response.Content.ReadAsAsync<Error>().ConfigureAwait(false));
                 }
 
-                var callback = await response.Content.ReadAsAsync<Callback>().ConfigureAwait(false);
+                var callback = JsonConvert.DeserializeObject<Callback>(payload);
 
                 return callback;
             }
